@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
+/* Satish bodake */
 public class ActivityLifeCycle extends AppCompatActivity {
 
     String LOG_TAG = "LogActivityLifeCycle";
