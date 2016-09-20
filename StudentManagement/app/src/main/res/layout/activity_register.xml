@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ecd881"
+    tools:context="com.hvdesai.register.ActivityRegister">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Desai College"
+        android:layout_centerHorizontal="true"
+        android:background="#478302"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reg_txt"
+        android:layout_below="@+id/header"
+        android:layout_centerHorizontal="true"
+        android:text="Registration Form"
+        android:layout_margin="10dp"
+        android:textSize="17sp"
+        />
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#541360"
+        android:layout_below="@+id/reg_txt"
+        />
+    <EditText
+        android:id="@+id/edt_namee"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_name"
+        android:hint="Enter your name here"
+        android:textSize="18sp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/edt_mail"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#541360"
+        android:layout_below="@+id/edt_namee"
+        />
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edt_mail"
+        android:hint="Enter your email here"
+        android:textSize="18sp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_country"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#541360"
+        android:layout_below="@+id/edt_email"
+        android:text=" Please Select your country name"
+        />
+
+    <Spinner
+        android:id="@+id/spinn_country1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_country"
+        ></Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_phone"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#541360"
+        android:layout_below="@+id/spinn_country1"
+        android:text="Phone Number :"
+        />
+    <EditText
+        android:id="@+id/edit_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:textSize="18sp"
+        android:layout_below="@+id/txt_phone"
+        android:hint="Enter your mobile number here"
+        android:inputType="phone"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/txt_pass1"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="#541360"
+    android:layout_below="@+id/edit_phone"
+    android:text="Please enter your Password :"
+    />
+    <EditText
+        android:id="@+id/edt_pass1"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_pass1"
+        android:hint="Enter your password here"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txt_pass2"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#541360"
+        android:layout_below="@+id/edt_pass1"
+        android:text="Please confirm your Password :"
+        />
+    <EditText
+        android:id="@+id/edt_pass2"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_pass2"
+        android:hint="Confirm your password here"
+        android:inputType="textPassword"
+        android:textSize="18sp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:background="@color/colorAccent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:layout_below="@+id/edt_pass2"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</RelativeLayout>
+</ScrollView>
